@@ -1,0 +1,12 @@
+    static String palandrome(){
+        System.out.println("what would you like to check? ");   // creates scanner for input of string
+        Scanner src = new Scanner(System.in);                   // scanner
+        String pal = src.nextLine();                              
+        String reverse = "";                                    // create variable for reversed string
+        for (int i = pal.length() - 1; i >= 0; i--) {           // for loop to reverse string
+            reverse = reverse + pal.charAt(i);
+        }
+        System.out.println("Comparing " + pal + " and " + reverse + " " + " which is " + pal.equals(reverse));
+                                                                // compare the two strings
+        return palandrome();                                    // return function
+    }
